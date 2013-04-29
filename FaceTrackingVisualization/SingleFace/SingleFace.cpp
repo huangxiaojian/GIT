@@ -94,8 +94,8 @@ void SingleFace::DrawGLScene()
 {
 #ifdef GAZE_TRACKING
 	//std::cout << "Draw:" << m_FTHelper.isSuccessful() << std::endl;
-	//if(m_FTHelper.isSuccessful())
-		//std::cout << "DrawGLScene(): True" << std::endl;
+	if(m_FTHelper.isSuccessful())
+		std::cout << "DrawGLScene(): True" << std::endl;
 
 	GLfloat pos[3];
 	pos[0] = (m_FTHelper.GetVertices()[73].x+m_FTHelper.GetVertices()[70].x)*0.5;
