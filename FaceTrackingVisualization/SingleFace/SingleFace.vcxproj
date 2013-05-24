@@ -85,8 +85,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(KINECTSDK10_DIR)\inc;$(FTSDK_DIR)inc;$(OPENCV_DIR)\include\opencv;$(OPENCV_DIR)\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(FTSDK_DIR)Lib\x86;$(KINECTSDK10_DIR)\Lib\x86;$(OPENCV_DIR)\x86\vc11\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(OPENCV_DIR)\include\opencv;$(OPENCV_DIR)\include;$(KINECTSDK10_DIR)\inc;$(FTSDK_DIR)inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OPENCV_DIR)\x86\vc11\lib;$(FTSDK_DIR)Lib\x86;$(KINECTSDK10_DIR)\Lib\x86;$(LibraryPath)</LibraryPath>
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
     <OutDir>$(SolutionDir)Out\$(ProjectName)\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Int\$(ProjectName)\$(PlatformName)\$(Configuration)\</IntDir>
